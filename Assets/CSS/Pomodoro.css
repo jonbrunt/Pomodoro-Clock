@@ -2,7 +2,7 @@ body {
 	max-width: 1600px;
 	min-height: 600px;
 	background-color: #2a2a2a;
-	background-image: url('../Images/PomodoroBanner.jpg');
+	background-image: url('https://res.cloudinary.com/jonbrunt/image/upload/v1507736757/PomodoroBanner_ktnqjb.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
