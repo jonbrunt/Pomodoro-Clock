@@ -1,1 +1,1 @@
-# pomodoro_clock
+A basic pomodoro clock written in plain HTML, CSS, and vanilla JS, using howler.js for sound. The app allows user input for work and break interval, including dynamic changes for the following cycle while in use. All cycle changes are notified with an audible alarm. The app enforces a 15 minute break after four work cycles. This can easily be changed within the countdown() on line 85 in the JavaScript.
