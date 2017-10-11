@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='shortcut icon' type='image/x-icon' href='Assets/Images/MyFavicon.ico'>
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossorigin='anonymous'>
+<link rel='stylesheet' type='text/css' href='Assets/CSS/Pomodoro.css'> 
+<title>JMB Pomodoro Clock</title>
+
+</head>
+<body>
+
+<h1>POMODORO CLOCK</h1>
+<h2><span>Ready To Begin</span></h2>
+
+<div>
+	<div class='controls' id='left'>
+	<h3><i class='fa fa-minus-square red' id='minusDuration' aria-hidden='true'>&nbsp;</i><span id='duration'>25</span>&nbsp;<i class='fa fa-plus-square green' id='plusDuration' aria-hidden='true'></span></i></h3>
+	<p>Work Interval</p>
+	</div>
+
+	<div class='controls' id='right'>
+	<h3><i class='fa fa-minus-square red' id='minusRest' aria-hidden='true'>&nbsp;</i><span id='rest'>03</span>&nbsp;<i class='fa fa-plus-square green' id='plusRest' aria-hidden='true'></i></h3>
+	<p>Break Interval</p>
+	</div>
+
+	<h3 id='time'><span id='minutes'>25</span>:<span id='seconds'>00</span></h3>
+	<h3>Round: <span id='round'>1</span></h3>
+
+	<div class='buttonContainer'>
+		<span class='button' id = 'start'>Start</span>
+		<span class='button' id = 'reset'>Reset</span>
+		<span class='button' id = 'stopAlarm'>Alarm Off</span>
+	</div>
+
+	<p class='credit'>Design &amp; Development by Jonathan M. Brunt</p>
+	<p>sound effect obtained from <a href='https://www.zapsplat.com' target='_blank'>https://www.zapsplat.com</a></p>
+</div>
+
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.js'></script>
+<script type='text/javascript' src='Assets/JS/Pomodoro.js'></script>
+
+</body>
+</html>
