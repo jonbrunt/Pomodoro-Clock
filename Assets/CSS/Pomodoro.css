@@ -1,0 +1,154 @@
+body {
+	max-width: 1600px;
+	min-height: 600px;
+	background-color: #2a2a2a;
+	background-image: url('../Images/PomodoroBanner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	color: #2a2a2a;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+h1 {
+	margin: 30px auto;
+	padding: 0 20px;
+	text-align: center;
+	font-size: 3em;
+	letter-spacing: 1px;
+}
+
+h2 {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 2.25em;
+}
+
+div {
+	width: 60%;
+	background-color: #919499;
+	margin: 0 auto;
+	padding: 5px 20px 5px;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+
+.controls {
+	width: 125px;
+}
+
+#left {
+	float: left;
+}
+
+#right {
+	float: right;
+}
+
+.controls p {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+h3 {
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: 1px;
+}
+
+#time {
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.fa:hover {
+	cursor: pointer;
+}
+
+.red {
+	color: #ff0000;
+}
+
+.green {
+	color: #26ff00;
+}
+
+.buttonContainer {
+	margin-top: 32px;
+	width: 40%;
+}
+
+.button {
+	display: block;
+	background-color: #2a2a2a;
+	margin-top: 6px;
+	padding: 10px 0;
+	border: 2px solid #ffffff;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+#reset {
+	display: none;
+}
+
+#stopAlarm {
+	display: none;
+}
+
+p {
+	margin: 3px 0;
+	text-align: center;
+}
+
+.credit {
+	margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+
+	h1 {
+		font-size: 1.875em;
+	}
+
+	h2 {
+		font-size: 1.50em;
+	}
+
+	div {
+		width: 80%;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+
+	#left, #right {
+		float: none;
+	}
+
+	#time {
+		margin-top: 40px;
+	}
+
+	p {
+		font-size: 0.8em;
+	}
+}
