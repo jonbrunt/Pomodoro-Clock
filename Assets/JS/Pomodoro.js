@@ -45,7 +45,7 @@ function adjustRest() {
 init();
 //gives start button functionality
 function init() {
-	var start = document.querySelector('#start');
+	const start = document.querySelector('#start');
 	start.addEventListener('click', function() {
 		start.style.display = 'none'; //hides start button
 		reset.style.display = 'block'; //unhides reset button
@@ -56,11 +56,11 @@ function init() {
 //main pomodoro clock action
 function main(time, interval) {
 	//assigns values to local variables
-	var i = interval, m = time, s = 59; 
+	let i = interval, m = time, s = 59; 
 	if (i > 1) howl(); //initiates alarm on all cycle changes
 	running = true; 
 	//initializes a 1sec interval counter and calls countdown(), and assigns interval identification number to id for future use in clearing the interval
-	var id = setInterval(function() {countdown()}, 1000);
+	let id = setInterval(function() {countdown()}, 1000);
 	//adds functionality to reset button
 	reset.addEventListener('click', function() {
 		initialValues(); //calls function to set initial clock values based on current interval settings
@@ -106,11 +106,11 @@ function main(time, interval) {
 }
 //controls audio alarm via howler js
 function howl() {
-	var alarm = document.querySelector('#stopAlarm');
+	const alarm = document.querySelector('#stopAlarm');
 	reset.style.display = 'none'; //hides reset button
 	alarm.style.display = 'block'; //unhides alarm off button
 	//assigns variable for alarm sound call to howler js
-	var sound = new Howl({ 
+	let sound = new Howl({ 
 		src: ['Assets/Sounds/zapsplat_emergency_siren_air_raid_synthesized.mp3'],
 		loop: true //loops the alarm mp3
 	});
