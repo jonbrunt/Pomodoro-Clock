@@ -5,17 +5,17 @@ let roundNum = 1
 //used to track countdown status, to allow for change of displayed minutes when work interval is changed while counter is static
 let running = false;
 //globally targeting all necessary elements
-let banner = document.querySelector('h2 span');
-let duration = document.querySelector('#duration');
-let rest = document.querySelector('#rest');
-let minusDuration = document.querySelector('#minusDuration');
-let plusDuration = document.querySelector('#plusDuration');
-let minusRest = document.querySelector('#minusRest');
-let plusRest = document.querySelector('#plusRest');
-let minutes = document.querySelector('#minutes');
-let seconds = document.querySelector('#seconds');
-let text = document.querySelector('p');
-let reset = document.querySelector('#reset');
+const banner = document.querySelector('h2 span');
+const duration = document.querySelector('#duration');
+const rest = document.querySelector('#rest');
+const minusDuration = document.querySelector('#minusDuration');
+const plusDuration = document.querySelector('#plusDuration');
+const minusRest = document.querySelector('#minusRest');
+const plusRest = document.querySelector('#plusRest');
+const minutes = document.querySelector('#minutes');
+const seconds = document.querySelector('#seconds');
+const text = document.querySelector('p');
+const reset = document.querySelector('#reset');
 //controls work and break interval user adjustments from 1-99 mins
 minusDuration.addEventListener('click', function() {
 	if (timerLength > 1) {timerLength--; adjustTimer();}
