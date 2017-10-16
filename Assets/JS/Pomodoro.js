@@ -111,7 +111,7 @@ function alarmTone() {
 	alarm.style.display = 'block'; //unhides alarm off button
 	//assigns variable for alarm sound call
 	let sound = new Audio ('Assets/Sounds/zapsplat_emergency_siren_air_raid_synthesized.mp3');
-	//sound.loop = true //loops the alarm mp3
+	sound.loop = true //loops the alarm mp3
 	sound.play(); //plays alarm mp3
 	//adds functionalitiy to alarm stop button
 	alarm.addEventListener('click', function() {
