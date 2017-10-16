@@ -57,7 +57,7 @@ function init() {
 function main(time, interval) {
 	//assigns values to local variables
 	let i = interval, m = time, s = 59; 
-	if (i > 1) howl(); //initiates alarm on all cycle changes
+	if (i > 1) alarmTone(); //initiates alarm on all cycle changes
 	running = true; 
 	//initializes a 1sec interval counter and calls countdown(), and assigns interval identification number to id for future use in clearing the interval
 	let id = setInterval(function() {countdown()}, 1000);
@@ -104,20 +104,19 @@ function main(time, interval) {
 		banner.innerText = 'Ready To Begin'; //changes banner text
 	}
 }
-//controls audio alarm via howler js
-function howl() {
+//controls audio alarm
+function alarmTone() {
 	const alarm = document.querySelector('#stopAlarm');
 	reset.style.display = 'none'; //hides reset button
 	alarm.style.display = 'block'; //unhides alarm off button
-	//assigns variable for alarm sound call to howler js
-	let sound = new Howl({ 
-		src: ['Assets/Sounds/zapsplat_emergency_siren_air_raid_synthesized.mp3'],
-		loop: true //loops the alarm mp3
-	});
+	//assigns variable for alarm sound call
+	let sound = new Audio ('Assets/Sounds/zapsplat_emergency_siren_air_raid_synthesized.mp3');
+	sound.loop = true //loops the alarm mp3
 	sound.play(); //plays alarm mp3
 	//adds functionalitiy to alarm stop button
 	alarm.addEventListener('click', function() {
-		sound.stop();
+		sound.pause();
+		sound.currentTime = 0;
 		alarm.style.display = 'none'; //hides alarm button
 		reset.style.display = 'block'; //unhides reset button
 	});
