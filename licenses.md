@@ -1,5 +1,3 @@
-howler.js Copyright (c) 2013-2017 James Simpson and GoldFire Studios, Inc.
-
 sound effect obtained from https://www.zapsplat.com
 
 Font Awesome by Dave Gandy - http://fontawesome.io
