@@ -7,7 +7,7 @@ body {
 
 #container {
 	max-width: 1100px;
-	min-height: 600px;
+	min-height: 610px;
 	background-color: #2a2a2a;
 	background-image: url('https://res.cloudinary.com/jonbrunt/image/upload/v1507736757/PomodoroBanner_ktnqjb.jpg');
 	background-position: center center;
@@ -27,7 +27,7 @@ body {
 
 h1 {
 	margin: 40px auto 30px;
-	padding: 0 20px;
+	padding: 10px 20px 0;
 	text-align: center;
 	color: #ffffff;
 	font-size: 3em;
@@ -163,5 +163,16 @@ p {
 
 	p {
 		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 600px) {
+
+	#container {
+		border-radius: 0;
+	}
+
+	h1 {
+		margin-top: 0;
 	}
 }
